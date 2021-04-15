@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+<title>Family book</title>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        var family = ["Us.jpg","nivaan.JPG","Nidhi Gupta.JPG","mukesh.jpg","family.JPG"];
+		var members = ["My family","Nivaan","My mom (Nidhi)","My dad (Mukesh)","Family!"]
+        var  i = 0;
+       function change(){
+		   document.getElementById("tag").innerHTML= members[i];
+		   document.getElementById("image1").src= family[i];
+		   i++;
+		   if(i == 5)
+    {
+      i=0;
+    }
+    
+	   }
+    </script>
+
+    </head>
+    <body style="text-align: center; background:linear-gradient(#03adfc 1%,#6703fc 100%);">
+
+<h1>Family book</h1>
+<img style="height:400px; width:300px;" src="start_the_show.jpg" id="image1">
+<button id="button" onclick="change()" style="height: 25px; width: 75px;" font-size:30px; border-radius:25px;>next</button>
+<h3 id="tag">start the show!</h3>
+    </body>
+</html>
